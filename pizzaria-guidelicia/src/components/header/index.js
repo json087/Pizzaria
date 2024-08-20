@@ -6,7 +6,7 @@ const Header = () => {
         <header>
             <div className='header center'>
                 <picture>
-                    <img src='./assets/' alt='logo pizzaria'/>
+                    <img src='Pizzaria/pizzaria-guidelicia/public/assets/Desde 1978.png' alt='logo pizzaria'/>
                     </picture>
 
                     <nav>
@@ -19,7 +19,7 @@ const Header = () => {
                                 <a href='#'>Sobre</a>
                             </li>
 
-                            <li>
+                            <li>    
                                 <a href='#'>Contato</a>
                             </li>
 
