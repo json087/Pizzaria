@@ -6,7 +6,7 @@ const Header = () => {
         <header>
             <div className='header center'>
                 <picture>
-                    <img src='Pizzaria/pizzaria-guidelicia/public/assets/Desde 1978.png' alt='logo pizzaria'/>
+                    <img src='./assets/Desde1987.png' alt='logo pizzaria'/>
                     </picture>
 
                     <nav>

@@ -1,0 +1,7 @@
+.secao-capa {
+    background-color: url('/public/assets/pizza1.jpg');
+    height: 80vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
