@@ -2,6 +2,7 @@ import React from 'react';
 import './style.css';
 
 const Header = () => {
+    
     return (
         <header>
             <div className='header center'>
@@ -26,8 +27,13 @@ const Header = () => {
                         </ul>
                     </nav>
                 </div>
+
+                
+
         </header>
     )
 }
+
+    
 
 export default Header;

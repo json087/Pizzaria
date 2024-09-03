@@ -1,60 +1,70 @@
-.header{
-    display: flex;
-    gap: 10px 20px;
-    align-items: center;
-    margin: auto;
-    background-color: rgb(255, 0, 0);
+/*
+#f1e2bb - bege
+#7ed957 - verde
+#ff3131 - vermelho
+*/
 
-    }
-    
-    .header picture {
-    display: flex;
+
+.header {
+  position: relative;
+  background-color: #f1e2bb;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header picture {
+  position: relative;       
+  max-width: 350px;
+  top: 30px;
+}
+
+.header nav ul {
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  gap: 20px;
+  right: 70px;
+  top: 20px;
+}
+
+nav a {
+  color: #ff3131;
+  font-weight: bold;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: medium;
+}
+
+.header nav ul li a {
+  text-transform: uppercase;
+  font-weight: bold;
+  position: relative;
+}
+
+.header nav ul li a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  background-color: #ff3131;
+  width: 0;
+  height: 2px;
+  transition: 0.3s;
+}
+
+.header nav ul li a:hover::after {
+  width: 100%;
+}
+
+@media (max-width: 480px) {
+  .header nav ul {
     justify-content: center;
-    align-items: center;
-    max-width: 250px;
-    }
-    
-    nav a {
-    color: #b7b935;
-    font-weight: bold;
-    font-family: poppins;
-    }
-    
-    .header nav ul li a{
-    text-transform: uppercase;
-    font-weight: 500;
-    position: relative;
-    }
-    
-    .header nav ul li a::after{
-    content: "";
-    display: block;
-    position: absolute;
-    bottom: 0;
-    background-color: #80b935;
-    width: 0;
-    height: 2px;
-    transition: 0.3s;
-    }
-    
-    .header nav ul li a:hover::after {
-        width: 100%;
-    }
-    
-    .header nav ul {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    }
-    
-    @media (max-width: 480px) {
-    .header nav ul {
-    justify-content: center;
-    display: none;
-    }
-    }
-    
-    .header nav ul li a {
-    padding: 3px 6px;
-    border-radius: 5px;
-    }
+    display: none;  
+  }
+}
+
+.header nav ul li a {
+  padding: 3px 6px;
+  border-radius: 5px;
+}
+
