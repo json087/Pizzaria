@@ -1,6 +1,6 @@
 .secao-capa {
     background-image: url(/public/assets/capa.png) ;
-    height: 80vh;
+    height: 90vh;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -30,4 +30,41 @@
 
 .texto-capa h1{
     font-size: 3rem;
+}
+
+.texto-capa p{
+    font-size: 1.5rem;
+    color: black;
+}
+
+/*Media query*/
+@media (max-width: 768px){
+    .capa {
+        justify-content: flex-start;
+    }
+    .texto-capa{
+        margin-top: 160px;
+        max-width: 350px;
+    }
+    .texto-capa h1{
+        font-size: 2rem;
+    }
+    .texto-capa p{
+        font-size: 1.5rem;
+    }
+}
+
+@media(max-width: 500px){
+    .capa{
+        justify-content: flex-start;
+    }
+    .texto-capa{
+        max-width: 300px;
+    }
+    .texto-capa p{
+        font-size: 2rem;
+    }
+    .texto-capa h1{
+        font-size: 1.5rem;
+    }
 }
