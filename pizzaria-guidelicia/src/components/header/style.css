@@ -38,7 +38,6 @@
   flex-wrap: wrap;
   gap: 20px;
   margin: auto; 
-  
 }
 
 nav a {
@@ -53,7 +52,7 @@ nav a {
   font-weight: bold;
   position: relative;
   background-color: #c7aa90;
-  border-radius: 20px;
+  border-radius: 10px;
 }
 
   .header nav ul li a {
