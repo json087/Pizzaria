@@ -1,3 +1,76 @@
 section {
     background-color: #f1e2bb;
 }
+
+#produtos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 1024px;
+    margin: 0 auto;
+ }
+    
+.secao-produtos{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 25px;
+ }
+    
+.secao-produtos p{
+    font-size: 1.1rem;
+ }
+    
+ .titulos{
+    margin-bottom: 25px;
+}
+    
+.carro img{
+    display: grid;
+    grid-row: 2fr 2fr;
+    gap: 15px;
+    margin: 50px 0px;
+}
+    
+ .card-oculos picture img{
+    width: 80%;
+    height: auto;
+    max-height: 250px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+ }
+
+.card-oculos{
+    background-color: #f1e2bb;
+    padding: 20px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-oculos h3{
+        font-size: 2rem;
+ }
+
+.card-oculos p{
+    font-weight: 600;
+    font-size: 1.25rem;
+ }
+
+ .lista-oculos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+    padding: 0px 20px;
+
+
+
+ .lista-oculos p{
+  font-weight: 600;
+  font-size: 1.1;
+  margin-bottom: 25px;
+ }
+  }
+
