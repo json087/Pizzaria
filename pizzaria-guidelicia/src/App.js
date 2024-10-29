@@ -2,6 +2,7 @@ import './App.css';
 import Header from './components/header';
 import SecaoCapa from './components/SecaoCapa';
 import Produtos from './components/Produtos';
+import SecoaSobre from './components/Sobre'
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Header/>
       <SecaoCapa/>
       <Produtos/>
+      <SecoaSobre/>
     </div>
   );
 }

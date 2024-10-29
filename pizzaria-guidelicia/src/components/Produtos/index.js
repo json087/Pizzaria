@@ -11,23 +11,28 @@ const Produtos = () => {
       </p>
 
       <div className="carros-antigos">
-        <h2></h2>
+      <h2>Pizza Portugesa </h2>
         <div className="carro">
           <img src="./assets/pizza_portuguesa.png" alt="Pizza de Portugesa" />
+          <span>Pizza Portugesa</span>
+          <p></p>Deliciosa pizza com:
+
+
+
 
           <span>xx</span>
         </div>
         <div className="carro">
           <img src="./assets/pizza_frango.png" alt="Pizza de Frango" />
-          <span>xx</span>
+          <span>Pizza Frango com Catupiry</span>
         </div>
         <div className="carro">
           <img src="./assets/pizza_clabresa.png" alt="Pizza de Calabresa" />
-          <span>xx</span>
+          <span>Pizza de Calabresa</span>
         </div>
         <div className="carro">
           <img src="./assets/pizza_strogonoff.png" alt="Pizza de Strogonoff" />
-          <span>xx</span>
+          <span>pizza de strogonoff</span>
         </div>
       </div>
     </div>
