@@ -1,0 +1,45 @@
+#sobre {
+    background-color: aquamarine;
+    padding: 100px 0px;
+    }
+    
+    .sobre {
+    text-align: center;
+    }
+    
+    .sobre {
+    font-size: 2.5rem;
+    margin-bottom: 25px;
+    }
+    
+    .sobre p {
+    font-size: 1.1rem;
+    margin-bottom: 50px;
+    }
+    
+    .elementos-sobre {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 1px solid #a2adad;
+    }
+    
+    .sobre-elementos {
+    display: flex;
+    padding: 20px 25px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    }
+    
+    .sobre-elementos h4 {
+    font-family: 'Anybody', cursive;
+    font-size: 2rem;
+    line-height: 1.25;
+    }
+    
+    .sobre-elementos p {
+    font-size: 1.25rem;
+    line-height: 1.25;
+    margin: 0;
+    color: #4a4a4a;
+    }
