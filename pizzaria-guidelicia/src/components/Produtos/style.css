@@ -91,3 +91,81 @@ section {
     max-width: 100%; 
     height: auto; 
   }
+/* Estilo para o contêiner principal */
+.produtos {
+  text-align: center;
+  padding: 20px;
+  background-color: #7ed957;
+}
+
+.produtos h1 {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.produtos p {
+  font-size: 16px;
+  color: #666;
+  max-width: 800px;
+  margin: 0 auto 20px;
+}
+
+/* Estilo para a seção das pizzas */
+.carros-antigos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 colunas */
+  grid-template-rows: repeat(2, 1fr); /* 2 linhas */
+  gap: 30px; /* Espaço entre os itens */
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Cada item dentro da grid */
+.carro {
+  border-radius: 8px;
+  /* Removendo a sombra que cria a "caixa" em volta */
+  box-shadow: none;
+  overflow: hidden;
+  text-align: center;
+  padding: 15px;
+  /* Removendo borda se houver */
+  border: none;
+}
+
+.carro img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  /* Removendo qualquer borda ou sombra */
+  border: none;
+  box-shadow: none;
+}
+
+.carro span {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #333;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+  .carros-antigos {
+    grid-template-columns: 1fr; /* 1 coluna em telas menores */
+    grid-template-rows: auto; /* A altura das linhas se ajusta automaticamente */
+  }
+}
+
+.descricao {
+  font-size: 18px;
+  font-weight: normal;
+  text-align: justify;
+}
+
+.propaganda {
+  font-weight: 100;
+  font-size: 20px;
+  text-align: center;
+}
