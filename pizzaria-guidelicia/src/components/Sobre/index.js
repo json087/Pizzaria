@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './style.css';
 
 const SecaoSobre = () => {
+    const [isHovered, setIsHovered] = useState(false);
+
     return (
         <section id="sobre">
             <div className="sobre center">
@@ -11,11 +13,21 @@ const SecaoSobre = () => {
                     iniciou suas atividades focadas em atendimento ao público com mais baixa renda, sempre proporcionando ao cliente um bom 
                     atendimento, qualidade e preço baixo.
                 </p>
+                <button className="btn-interacao" onClick={() => alert("Descubra mais sobre nós!")} >
+                    Saiba Mais
+                </button>
             </div>
 
             <div className="elementos-sobre">
-                <picture>
-                    <img src="./assets/loja.png" alt="Nossa Loja" />
+                <picture 
+                    onMouseEnter={() => setIsHovered(true)} 
+                    onMouseLeave={() => setIsHovered(false)}
+                >
+                    <img 
+                        src="./assets/loja.png" 
+                        alt="Nossa Loja" 
+                        style={{ transform: isHovered ? 'scale(1.1)' : 'scale(1)', transition: 'transform 0.3s ease' }}
+                    />
                 </picture>
             </div>
 
@@ -24,6 +36,9 @@ const SecaoSobre = () => {
                 <p>
                     Hoje temos mais de 10 filiais pelo Brasil
                 </p>
+                <button className="btn-interacao" onClick={() => alert("Veja nossas filiais no mapa!")}>
+                    Ver Filiais
+                </button>
             </div>
 
             <div className="texto-elementos">
@@ -34,6 +49,9 @@ const SecaoSobre = () => {
                 <picture>
                     <img src="./assets/atendimento.png" alt="Atendimento" />
                 </picture>
+                <button className="btn-interacao" onClick={() => alert("Entre em contato conosco!")} >
+                    Fale Conosco
+                </button>
             </div>
         </section>
     );

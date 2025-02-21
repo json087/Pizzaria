@@ -6,13 +6,18 @@ const Header = () => {
     <header>
       <div className="header center">
         <picture>
-          <img src="./assets/Desde1987.png" alt="logo pizzaria" />
+          <img
+            src="./assets/Desde1987.png"
+            alt="logo pizzaria"
+            width="100px"
+            height="100px"
+          />
         </picture>
 
         <nav>
           <ul>
             <li>
-              <a href="#">Produtos</a>
+              <a href="#linkpdt">Produtos</a>
             </li>
 
             <li>
@@ -22,22 +27,21 @@ const Header = () => {
             <li>
               <a href="#">Contato</a>
             </li>
-          </ul>
-        </nav>
 
-        <nav>
-          <ul class="right">
             <li>
-              <a href="#">Cadastra-se</a>
+              <a href="#" class="red">
+                Cadastre-se
+              </a>
             </li>
+
             <li>
-              <a href="#">Entrar</a>
+              <a href="#" class="red">
+                Entrar
+              </a>
             </li>
           </ul>
         </nav>
       </div>
-
-      
     </header>
   );
 };

@@ -1,45 +1,156 @@
+/* Estilo geral da seção */
 #sobre {
-    background-color: aquamarine;
-    padding: 100px 0px;
-    }
-    
-    .sobre {
+    background-color: #f4e1d2;  /* Cor de fundo mais quente e suave */
+    padding: 80px 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Centralização e tipografia para o título principal */
+.sobre {
     text-align: center;
-    }
-    
-    .sobre {
-    font-size: 2.5rem;
-    margin-bottom: 25px;
-    }
-    
-    .sobre p {
-    font-size: 1.1rem;
+    margin-bottom: 40px;
+}
+
+.sobre h2 {
+    font-size: 3.5rem;
+    color: #e64a19;  /* Laranja queimado para dar uma sensação de acolhimento e apetite */
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-family: 'Pacifico', cursive;  /* Fonte mais descontraída */
+}
+
+.sobre p {
+    font-size: 1.3rem;
+    color: #333;
     margin-bottom: 50px;
-    }
-    
-    .elementos-sobre {
+    line-height: 1.6;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Estilizando as imagens e elementos com grid */
+.elementos-sobre {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    border: 1px solid #a2adad;
-    }
-    
-    .sobre-elementos {
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    border: 1px solid #d9d9d9;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #fff3e0;  /* Fundo suave para os elementos */
+}
+
+.elementos-sobre picture img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.elementos-sobre picture img:hover {
+    transform: scale(1.05);  /* Efeito de zoom suave ao passar o mouse */
+}
+
+/* Estilo para as seções de texto */
+.texto-sobre {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.texto-sobre h4 {
+    font-family: 'Pacifico', cursive;
+    font-size: 2.5rem;
+    color: #e64a19;
+    margin-bottom: 15px;
+}
+
+.texto-sobre p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 30px;
+}
+
+/* Estilo para a parte de "Atendimento Flexível" */
+.texto-elementos {
     display: flex;
-    padding: 20px 25px;
-    flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+.texto-elementos h4 {
+    font-family: 'Pacifico', cursive;
+    font-size: 2.5rem;
+    color: #e64a19;
+    margin-bottom: 10px;
+}
+
+.texto-elementos p {
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.5;
+    width: 50%;
+}
+
+.texto-elementos picture {
+    width: 35%;
+}
+
+.texto-elementos picture img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Melhorando a responsividade */
+@media (max-width: 768px) {
+    .elementos-sobre {
+        grid-template-columns: 1fr;
     }
-    
-    .sobre-elementos h4 {
-    font-family: 'Anybody', cursive;
-    font-size: 2rem;
-    line-height: 1.25;
+
+    .texto-elementos {
+        flex-direction: column;
+        align-items: center;
     }
-    
-    .sobre-elementos p {
-    font-size: 1.25rem;
-    line-height: 1.25;
-    margin: 0;
-    color: #4a4a4a;
+
+    .texto-elementos p {
+        width: 80%;
+        text-align: center;
     }
+
+    .texto-elementos picture {
+        width: 80%;
+        margin-top: 20px;
+    }
+}
+
+/* Estilo do botão de interação */
+.btn-interacao {
+    background-color: #e64a19;  /* Cor laranja para destaque */
+    color: white;
+    padding: 12px 20px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-interacao:hover {
+    background-color: #d32f2f;  /* Cor de hover mais forte */
+    transform: scale(1.05);
+}
+
+/* Estilo de transição para as imagens */
+.elementos-sobre picture img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.elementos-sobre picture img:hover {
+    transform: scale(1.05);  /* Efeito de zoom suave ao passar o mouse */
+}
