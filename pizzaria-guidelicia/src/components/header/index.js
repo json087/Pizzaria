@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom"; // Importando Link
 import "./style.css";
 
 const Header = () => {
@@ -19,25 +20,21 @@ const Header = () => {
             <li>
               <a href="#linkpdt">Produtos</a>
             </li>
-
             <li>
               <a href="#">Sobre</a>
             </li>
-
             <li>
               <a href="#">Contato</a>
             </li>
-
             <li>
-              <a href="#" class="red">
+              <Link to="/createcheck" className="red">
                 Cadastre-se
-              </a>
+              </Link>
             </li>
-
             <li>
-              <a href="#" class="red">
+              <Link to="/login" className="red">
                 Entrar
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>

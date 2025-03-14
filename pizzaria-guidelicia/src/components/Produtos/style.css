@@ -106,25 +106,8 @@ section {
   .produtos-grid {
     grid-template-columns: 1fr; /* 1 coluna para telas pequenas */
   }
-<<<<<<< HEAD
 }
 
-.produto p{
-    font-size: 60px;
-}
-=======
-  
-  .carro {
-    display: flex;
-    flex-direction: column; 
-    align-items: center; 
-    flex-basis: calc(50% - 10px); 
-  }
-  
-  img {
-    max-width: 100%; 
-    height: auto; 
-  }
 /* Estilo para o contêiner principal */
 .produtos {
   text-align: center;
@@ -158,12 +141,10 @@ section {
 /* Cada item dentro da grid */
 .carro {
   border-radius: 8px;
-  /* Removendo a sombra que cria a "caixa" em volta */
   box-shadow: none;
   overflow: hidden;
   text-align: center;
   padding: 15px;
-  /* Removendo borda se houver */
   border: none;
 }
 
@@ -171,7 +152,6 @@ section {
   width: 100%;
   height: auto;
   border-radius: 8px;
-  /* Removendo qualquer borda ou sombra */
   border: none;
   box-shadow: none;
 }
@@ -203,4 +183,3 @@ section {
   font-size: 20px;
   text-align: center;
 }
->>>>>>> 0295111149e30fa9b2d98fe5b007d49d04726a15
