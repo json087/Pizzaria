@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";  // Para redirecionar após login
 import "./entrar.css";
 
-const Login = () => {
+const Logar = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
@@ -84,7 +84,7 @@ const Login = () => {
             required
           />
         </div>
-        <a className="Esenha">Esqueci minha senha!</a>
+        {/*<a href="#" className="Esenha">Esqueci minha senha!</a>*/}
         <button type="submit" className="login-button">
           Entrar
         </button>
@@ -93,4 +93,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Logar;

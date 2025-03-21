@@ -43,6 +43,7 @@ const Produtos = () => {
                 desfiado temperado e Catupiry.
               </p>
               <p className="preco">R$ 38,00</p>
+              <br></br>
                 <button className="btn-comprar">Comprar</button>
             </div>
           </div>
@@ -57,6 +58,7 @@ const Produtos = () => {
                 calabresa fatiada, cebola, e orégano.
               </p>
               <p className="preco">R$ 36,00</p>
+              <br></br>
               <button className="btn-comprar">Comprar</button>
             </div>
           </div>
@@ -65,14 +67,17 @@ const Produtos = () => {
           {/* Pizza margueirta */}
           <div className="produto">
             <img
-              src="/assets/pizza"
+              src="/assets/pizza_marguerita.jpg"
               alt="Pizza de Margureita"
             />
             <div className="descricao-e-preco">
               <h2>Pizza margueirta</h2>
               <p>
-              Massa crocante com molho de tomate, queijo mussarela, tomate fresco e manjericão. Simples, leve e cheia de sabor!</p>
-              <p className="btn-comprar">Comprar</p>
+              Massa crocante com molho de tomate, queijo mussarela, tomate fresco e manjericão. Simples, leve e cheia de sabor!
+              </p>
+              <p className="preco">R$ 35,00</p>
+              <br></br>
+              <button className="btn-comprar">Comprar</button>
             </div>
           </div>
 
@@ -87,14 +92,16 @@ const Produtos = () => {
               <p>
               Massa crocante com presunto, queijo mussarela, tomate e orégano. Uma combinação clássica e deliciosa!
               </p>
-              <p className="btn-comprar">Comprar</p>
+              <p className="preco">R$ 35,00</p>
+              <br></br>
+              <button className="btn-comprar">Comprar</button>
             </div>
           </div>
 
           {/* Pizza de brocolis */}
           <div className="produto">
             <img
-              src="/assets/pizza_romeuejulieta.png"
+              src="/assets/pizza_brocolis.png"
               alt="Pizza de brocolis"
             />
             <div className="descricao-e-preco">
@@ -102,55 +109,27 @@ const Produtos = () => {
               <p>
               Massa crocante com brócolis frescos, bacon crocante e cremoso catupiry. Uma mistura saborosa e irresistível!
               </p>
-              <p className="btn-comprar">Comprar</p>
+              <p className="preco">R$ 35,00</p>
+              <br></br>
+              <br></br>
+              <button className="btn-comprar">Comprar</button>
             </div>
           </div>
 
-          {/* Pizza Romeu e Julieta */}
+          {/* Pizza de doce de leite */}
           <div className="produto">
             <img
-              src="/assets/pizza_romeuejulieta.png"
+              src="/assets/pizza_docedeleite.webp"
               alt="Pizza Romeu e Julieta"
             />
             <div className="descricao-e-preco">
-              <h2>Pizza Romeu e Julieta</h2>
+              <h2>Pizza de doce de leite com coco</h2>
               <p>
-                Massa crocante com queijo mussarela e goiabada, criando a
-                combinação perfeita entre o salgadinho e o doce. Irresistível!
+              Uma deliciosa pizza de doce de leite com coco, com massa leve e crocante, coberta por doce de leite cremoso e finalizada com coco 
+              ralado, oferecendo uma experiência doce e tropical.
               </p>
-              <p className="btn-comprar">Comprar</p>
-            </div>
-          </div>
-
-          {/* Pizza Romeu e Julieta */}
-          <div className="produto">
-            <img
-              src="/assets/pizza_romeuejulieta.png"
-              alt="Pizza Romeu e Julieta"
-            />
-            <div className="descricao-e-preco">
-              <h2>Pizza Romeu e Julieta</h2>
-              <p>
-                Massa crocante com queijo mussarela e goiabada, criando a
-                combinação perfeita entre o salgadinho e o doce. Irresistível!
-              </p>
-              <p className="btn-comprar">Comprar</p>
-            </div>
-          </div>
-
-          {/* Pizza Romeu e Julieta */}
-          <div className="produto">
-            <img
-              src="/assets/pizza_romeuejulieta.png"
-              alt="Pizza Romeu e Julieta"
-            />
-            <div className="descricao-e-preco">
-              <h2>Pizza Romeu e Julieta</h2>
-              <p>
-                Massa crocante com queijo mussarela e goiabada, criando a
-                combinação perfeita entre o salgadinho e o doce. Irresistível!
-              </p>
-              <p className="btn-comprar">Comprar</p>
+              <p className="preco">R$ 35,00</p>
+              <button className="btn-comprar">Comprar</button>
             </div>
           </div>     
 
@@ -166,7 +145,8 @@ const Produtos = () => {
                 Massa crocante com queijo mussarela e goiabada, criando a
                 combinação perfeita entre o salgadinho e o doce. Irresistível!
               </p>
-              <p className="btn-comprar">Comprar</p>
+              <p className="preco">R$ 35,00</p>
+              <button className="btn-comprar">Comprar</button>
             </div>
           </div>
 
@@ -182,25 +162,13 @@ const Produtos = () => {
                 Massa doce com brigadeiro cremoso, coberta com granulado. Uma
                 explosão de sabor para os amantes de chocolate!
               </p>
-              <p className="btn-comprar">Comprar</p>
+              <p className="preco">R$ 35,00</p>
+              <button className="btn-comprar">Comprar</button>
             </div>
           </div>
             </div>
     
-           {/* Pizza de prestígio */}
-           <div className="produto">
-            <img
-              src="/assets/pizza_chocolatebranco.jpeg"
-              alt="Pizza Romeu e Julieta"
-            />
-            <div className="descricao-e-preco">
-              <h2>Pizza de Prestígio</h2>
-              <p>
-              Massa doce com recheio de brigadeiro, coco ralado e cobertura de chocolate. Uma delícia irresistível para quem ama a combinação de chocolate e coco!
-              </p>
-              <p className="btn-comprar">Comprar</p>
-            </div>
-          </div>
+           
           </div>
         </div>
   );
