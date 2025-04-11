@@ -48,7 +48,8 @@ const Logar = () => {
       // Salva o token
   
       // Navega para a página de conta
-      navigate("/account", { state: { email, password } });
+      // navigate("/account", { state: { email, password } });
+      navigate("/Produtos");
   
       console.log("Login bem-sucedido:", data);
     

@@ -3,7 +3,7 @@ import "./App.css";
 import Header from "./components/header";
 import SecaoCapa from "./components/SecaoCapa";
 import Produtos from "./components/Produtos";
-import SecaoSobre from "./components/Sobre";
+import Sobre from "./components/Sobre";
 import Comprar from "./components/Comprar"; // Certifique-se que o arquivo existe
 import Create from "./components/createcheck"; // Certifique-se que o arquivo existe
 import Logar from "./components/entrar";
@@ -21,7 +21,7 @@ function App() {
               <>
                 <SecaoCapa />
                 <Produtos />
-                <SecaoSobre />
+                <Sobre />
               </>
             }
           />
@@ -29,7 +29,6 @@ function App() {
           {/* Rota para criar conta */}
           <Route path="/createcheck" element={<Create />} />
           <Route path="/entrar" element={<Logar />}/>
-          
           {/* Rota para comprar */}
           <Route path="/Comprar" element={<Comprar />} />
         </Routes>

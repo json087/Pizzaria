@@ -18,23 +18,19 @@ const Header = () => {
         <nav>
           <ul>
             <li>
-              <a href="#linkpdt">Produtos</a>
+                <a href="#linkpdt">Produtos</a>
             </li>
             <li>
               <a href="#">Sobre</a>
             </li>
             <li>
-              <a href="#">Contato</a>
+              <Link to="#" className="red">Contato</Link>
             </li>
             <li>
-              <Link to="/createcheck" className="red">
-                Cadastre-se
-              </Link>
+              <Link to="/createcheck" className="red">Cadastre-se</Link>
             </li>
             <li>
-              <Link to="/entrar" className="red">
-                Entrar
-              </Link>
+              <Link to="/entrar" className="red">Entrar</Link>
             </li>
           </ul>
         </nav>

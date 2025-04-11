@@ -27,7 +27,7 @@ const SecaoCapa = () => {
           <h1>Bem-vindo à Nossa Página!</h1>
           <br></br>
           <p>Explore o conteúdo e se surpreenda com o que temos a oferecer. Descubra algo novo hoje.</p>
-          <button className="cta-button">Saiba Mais</button>
+      
         </div>
       </div>
     </section>

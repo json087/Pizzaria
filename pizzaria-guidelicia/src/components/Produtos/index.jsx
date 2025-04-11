@@ -1,11 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import './style.css';
 
 const Produtos = () => {
+const navigate = useNavigate();
+
+const irParaHome = () => {
+  navigate('/');
+};
   return (
+    
     <div className="produtos-container">
       <div className="product-section">
         <h1 id="linkpdt">NOSSOS PRODUTOS</h1>
+        
+                
         <p>
           Trabalhamos com pizzas artesanais, preparadas com ingredientes frescos
           e selecionados. Nossa especialidade são as pizzas clássicas e de
@@ -20,11 +29,13 @@ const Produtos = () => {
             <img src="/assets/pizza_portuguesa.png" alt="Pizza Portuguesa" />
             <div className="descricao-e-preco">
               <h2>Pizza de Portuguesa</h2>
+              <br></br>
               <p>
                 A pizza portuguesa é composta por molho de tomate, queijo
                 mussarela, presunto, linguiça calabresa, ovos cozidos,
                 azeitonas, pimentões e cebolas.
-              </p>
+              </p>  
+              <br></br>
               <p className="preco">R$ 35,00</p>
               <button className="btn-comprar">Comprar</button>
             </div>
@@ -42,21 +53,27 @@ const Produtos = () => {
                 Massa de pizza, molho de tomate, queijo mussarela, frango
                 desfiado temperado e Catupiry.
               </p>
+              <br></br>  
+              <br></br> 
+              <br></br>
               <p className="preco">R$ 38,00</p>
               <br></br>
                 <button className="btn-comprar">Comprar</button>
             </div>
           </div>
-
+          
           {/* Pizza Calabresa */}
           <div className="produto">
-            <img src="/assets/pizzacalabresa.png" alt="Pizza Calabresa" />
+            <img src="/assets/pizzacalabresaoficial.png" alt="Pizza Calabresa" />
             <div className="descricao-e-preco">
               <h2>Pizza Calabresa</h2>
+              <br></br>
               <p>
                 Massa tradicional com molho de tomate, queijo mussarela,
                 calabresa fatiada, cebola, e orégano.
               </p>
+             <br></br>
+             <br></br>
               <p className="preco">R$ 36,00</p>
               <br></br>
               <button className="btn-comprar">Comprar</button>
@@ -67,14 +84,15 @@ const Produtos = () => {
           {/* Pizza margueirta */}
           <div className="produto">
             <img
-              src="/assets/pizza_marguerita.jpg"
-              alt="Pizza de Margureita"
+              src="/assets/pizzamargueritaoficial.png"
+              alt="Pizza de Marguerita"
             />
             <div className="descricao-e-preco">
-              <h2>Pizza margueirta</h2>
+              <h2>Pizza marguerita</h2>
               <p>
               Massa crocante com molho de tomate, queijo mussarela, tomate fresco e manjericão. Simples, leve e cheia de sabor!
               </p>
+              
               <p className="preco">R$ 35,00</p>
               <br></br>
               <button className="btn-comprar">Comprar</button>
@@ -92,6 +110,7 @@ const Produtos = () => {
               <p>
               Massa crocante com presunto, queijo mussarela, tomate e orégano. Uma combinação clássica e deliciosa!
               </p>
+              <br></br>
               <p className="preco">R$ 35,00</p>
               <br></br>
               <button className="btn-comprar">Comprar</button>
@@ -109,9 +128,11 @@ const Produtos = () => {
               <p>
               Massa crocante com brócolis frescos, bacon crocante e cremoso catupiry. Uma mistura saborosa e irresistível!
               </p>
+              <br></br>
+              <br></br>
+              <br></br>
+              <br></br>
               <p className="preco">R$ 35,00</p>
-              <br></br>
-              <br></br>
               <button className="btn-comprar">Comprar</button>
             </div>
           </div>
@@ -119,14 +140,14 @@ const Produtos = () => {
           {/* Pizza de doce de leite */}
           <div className="produto">
             <img
-              src="/assets/pizza_docedeleite.webp"
+              src="/assets/pizzaprestigiooficial.png"
               alt="Pizza Romeu e Julieta"
             />
             <div className="descricao-e-preco">
-              <h2>Pizza de doce de leite com coco</h2>
+              <h2>Pizza de Prestígio</h2>
               <p>
-              Uma deliciosa pizza de doce de leite com coco, com massa leve e crocante, coberta por doce de leite cremoso e finalizada com coco 
-              ralado, oferecendo uma experiência doce e tropical.
+              Uma combinação irresistível de chocolate cremoso, coco ralado e uma cobertura especial de leite condensado. 
+              Doce na medida certa, perfeita para os amantes de sabores clássicos e marcantes.
               </p>
               <p className="preco">R$ 35,00</p>
               <button className="btn-comprar">Comprar</button>
@@ -141,10 +162,13 @@ const Produtos = () => {
             />
             <div className="descricao-e-preco">
               <h2>Pizza Romeu e Julieta</h2>
+              <br></br>
               <p>
                 Massa crocante com queijo mussarela e goiabada, criando a
                 combinação perfeita entre o salgadinho e o doce. Irresistível!
               </p>
+              <br></br>
+              <br></br>
               <p className="preco">R$ 35,00</p>
               <button className="btn-comprar">Comprar</button>
             </div>
@@ -153,7 +177,7 @@ const Produtos = () => {
             {/* Pizza brigadeiro */}
             <div className="produto">
             <img
-              src="/assets/pizza_brigadeiro.png"
+              src="/assets/pizzabrigadeirooficial.png"
               alt="Pizza Romeu e Julieta"
             />
             <div className="descricao-e-preco">
@@ -162,6 +186,8 @@ const Produtos = () => {
                 Massa doce com brigadeiro cremoso, coberta com granulado. Uma
                 explosão de sabor para os amantes de chocolate!
               </p>
+              <br></br>
+              <br></br>
               <p className="preco">R$ 35,00</p>
               <button className="btn-comprar">Comprar</button>
             </div>

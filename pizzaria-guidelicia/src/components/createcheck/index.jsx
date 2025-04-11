@@ -56,7 +56,7 @@ const Create = () => {
       console.log("Conta criada com sucesso");
 
       // Navegação para a página de login após sucesso
-      navigate("/login");
+      navigate("/entrar");
     } catch (error) {
       console.error("Erro:", error);
     } finally {

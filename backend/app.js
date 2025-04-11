@@ -30,4 +30,9 @@ app.use((err, req, res, next) => {
   res.status(err.status || 500).json({ error: err.message });
 });
 
+const port = process.env.PORT || 3002;
+
+app.listen(port, () => {
+  console.log(`Servidor rodando na porta ${port}`);
+});
 module.exports = app;

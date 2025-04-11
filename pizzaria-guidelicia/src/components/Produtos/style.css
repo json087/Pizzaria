@@ -214,3 +214,93 @@ section {
   font-size: 20px;
   text-align: center;
 }
+
+/* Container principal */
+.produtos-container {
+  padding: 40px;
+  background-color: #f9f9f9;
+}
+
+/* Grid de produtos */
+.produtos-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+
+/* Bloco individual do produto */
+.produto {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 40px;
+  width: 100%;
+  max-width: 1200px;
+  padding: 30px;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Imagem da pizza */
+.produto img {
+  width: 220px;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Container de descrição, preço e botão */
+.descricao-e-preco {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 30px;
+}
+
+/* Nome da pizza */
+.descricao-e-preco h2 {
+  margin: 0;
+  font-size: 32px; /* Aumentado */
+  font-weight: 700;
+  min-width: 220px;
+}
+
+/* Descrição da pizza */
+.descricao-e-preco p {
+  margin: 0;
+  font-size: 200px; /* Aumentado */
+  flex: 1;
+  min-width: 280px;
+  justify-content: center;
+}
+
+/* Preço */
+.preco {
+  font-weight: bold;
+  font-size: 24px; /* Aumentado */
+  color: #2a9d8f;
+  white-space: nowrap;
+}
+
+/* Botão "Comprar" */
+.btn-comprar {
+  background-color: #e63946;
+  color: white;
+  padding: 14px 28px;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-comprar:hover {
+  background-color: #d62828;
+}
